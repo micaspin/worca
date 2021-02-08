@@ -1,175 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Class example</title>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Shrek's Story</title>
+<link rel="shortcut icon" type="image/png" href="https://www.freepnglogos.com/uploads/shrek-png/shrek-icon-web-icons-png-0.png"/>
+<style>
 
-<!--This is where we're linking to Google Fonts to load the Lato font. Remember this needs to go inside your <head> tag-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&display=swap" rel="stylesheet">
+a {
+ color:#63b010;
+}
 
-  </head>
+h1 {
+ text-shadow: 0 0 3px #306e19, 0 0 5px #1e2e0f;
 
-<!--Here I'm using the inline "style" attribute to tell the <body> element that it will use Lato for all of the text.-->
-  <body style="font-family:'Lato', sans-serif; line-height: 1.8em; background-color:azure">
-
-  <!--Notice the "margin:10em" is also part of this style; this is telling the entire div that it will have a slight margin around the whole page-->
-<div style="margin:10em;">
-
-<div>
-    <h1>A test example of HTML tags</h1>
-<!--this style attribute is telling <h2> that its font weight will be the lightest weight, 100-->
-    <h2 style="font-weight:100">What they look like on a webpage, and how to use them.</h2>
-  </div>
-
-  <!-- the <br> tag creates a break space and is handy to create quick visual separation-->
-<br>
-
-<div>
-  <h3>
-    For example, what does a table in HTML look like?
-  </h3>
-
-<!--this is how you start a table in HTML -->
-  <table>
-<tbody>
-
-<!--this is identifying your 1st horizontal row of the table-->
-<tr>
-	<td>1</td>
-	<td>2</td>
-  <td>3</td>
-  <td>4</td>
-  <td>5</td>
-</tr>
-
-<!--this is identifying your 2nd horizontal row of the table-->
-<tr>
-	<td>6</td>
-	<td>7</td>
-  <td>8</td>
-  <td>9</td>
-  <td>10</td>
-</tr>
-<!--this is identifying your 3rd horizontal row of the table-->
-<tr>
-	<td>11</td>
-	<td>12</td>
-  <td>13</td>
-  <td>14</td>
-  <td>15</td>
-</tr>
-<!--this is identifying your 4th horizontal row of the table-->
-<tr>
-	<td>16</td>
-	<td>17</td>
-  <td>18</td>
-  <td>19</td>
-  <td>20</td>
-</tr>
-
-</tbody>
-<!--ok, you're done with your table and you're closing the table element with the closing tag.-->
-</table>
+}
 
 
-</div>
-<br>
-<div>
-  <h3>Now let's take a look at images in HTML.</h3>
-  <p>Remember that you have to call the link properly. So take a look at the folder structure for this example.<br>
-  Ok, so we have a folder called "img" and inside that folder, there's an image called meme.jpg<br>
-  To fetch this image in our code, we have to specify in our HTML that the browser needs to look inside the "img" folder and then name the image we want.<br>
-  The way you write that is by saying <b>img src="img/meme.jpg"</b><br>
-  <b>By the way! To bold your text just use the "b" tag!</b></p>
+p {
+ font-size:18px;
+ text-shadow: 0 0 3px #1a260f;
 
-  <!--This is where you're calling the image-->
-  <img src="img/memeislife.jpg" alt="A coding meme that makes fun of the complexity of coding" width="500" height="auto">
-  <!--Notice that when you resize your browser the image doesn't automatically resize.
-  Let's try to include an image that will resize by using a percentage for the width-->
-<div>
-  <img src="img/meme.jpg" alt="cat meme" width="50%" height="auto">
-  <!--Cool! percentages can be used to make images instantly responsive! This can be anything from 1% to 100%. It's just a percentage of your total browser width.-->
-</div>
+}
 
-</div>
+audio {
+ display:none;
+}
 
-<div>
-  <br>
-<h3>Ok. We know about tables, images, and headings. What about links?</h3>
-<p>A link tag, or "a" tag, is an <b>inline element</b>. This means that when you include it in your code, it isn't going to force a new row like block elements do;
-  it will fit into the rest of the line. Let's look at an example of what this looks like.
-  <br>
-  Ok, so we are currently still within our "p" element. Let's throw in link <a href="https://www.google.com/" target="_blank">here</a>. Notice how we're still in the same line?
-  <p>A link will appear differently in HTML than a button will. This is what a <button>button looks like</button><br>
-    BE AWARE! Buttons in HTML are intended to do something, not to take you somewhere. You'll notice that for buttons there is no href attribute;
-    that's because buttons are meant to be targeted using JavaScript to make something happen. Your "a" tags are for links, and your "button" tag is for action.
+</style>
+</head>
+<body style="background-image:url('https://i.imgur.com/CuShj4j.jpg'); background-size:cover;">
+
+<center>
+<div style="margin:100px 320px; position:relative; left:250px; top:30px">
+<h1 style="font-family:Luminari; font-size:50px; color:#63b010;">Shrek the Ogre</h1>
+<p style="font-family:Papyrus; color:#f0efe6; margin:10px 40px;">Once upon a time, in a far away swamp, there lived an ogre named Shrek whose precious solitude is suddenly shattered by an invasion of annoying <a href="https://www.youtube.com/watch?v=EsqpVl0TVek&ab_channel=KhoiTran">fairy tale characters</a>. They were all banished from their kingdom by the evil Lord Farquaad. Determined to save their home -- not to mention his -- Shrek cuts a deal with Farquaad and sets out to rescue Princess Fiona to be Farquaad's bride. Rescuing the Princess may be small compared to her deep, dark secret.<br>
+Years later, Shrek has <a href="https://www.youtube.com/watch?v=UvSGGd3ewFI&ab_channel=Movieclips">rescued Princess Fiona</a>, got married, and now is time to meet the parents. Shrek, Fiona, and Donkey set off to Far, Far Away to meet Fiona's mother and father. But not everyone is happy. Shrek and King Harold find it hard to get along, and there's tension in the marriage. It's not just the family who are unhappy. Prince Charming returns from a failed attempt at rescuing Fiona, and works alongside his mother, the Fairy Godmother, to try and find a way to get Shrek away from Fiona.<br>
+When <a href="https://www.youtube.com/watch?v=I7NcgNF-xFw&ab_channel=ShaunO%27Hagan">King Harold suddenly croaks</a>, Shrek learns he will have to rule the land of Far, Far Away, unless he can find a suitable heir to the throne. The most-promising candidate is Princess Fiona's cousin Artie, a teenage slacker in a medieval high-school. Shrek and his trusted companions, Donkey and Puss in Boots, set out to bring Artie back but find their mission is a bigger challenge than they expected.
+
+
 </p>
 <br>
-</div>
-<!--the hr tag is handy for creating a line-->
-<hr>
+<audio controls autoplay loop>
 
-
-<div>
-<!--The style here is saying everything in this div (all this text) will be the HTML color TOMATO-->
-<div style="color:Tomato">
-<h3>Some more tags for typography:</h3>
-
-
-<p>  <b> - Bold text</b></p>
-<p>   <strong> - Important text</strong> (basically same thing as bold text)</p>
-<p>   <i> - Italic text</i></p>
-<p>   <em> - Emphasized text</em></p>
-<p>   <small> - Smaller text</small></p>
-<p>   <del> - Deleted text</del></p>
-<p>   <ins> - Inserted text</ins></p>
-
-<p>This is<sub> subscript</sub> and <sup>superscript</sup></p>
-
-<br>
-<hr>
-<h3>This is an ordered list</h3>
-  <ol>
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-</ol>
-
-<br>
-<hr>
-<h3>This is a description list</h3>
-<dl>
-  <dt>Coffee</dt>
-  <dd>- black hot drink</dd>
-  <dt>Milk</dt>
-  <dd>- white cold drink</dd>
-</dl>
-
-<br>
-<hr>
-<h3>This is an unordered list</h3>
-<ul>
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-</ul>
-</div>
-
-<br>
-<hr>
-<h2>Resources</h2>
-<p><a href="https://www.w3schools.com/colors/colors_names.asp" target="_blank">List of all the HTML color names </a></p>
-<p><a href="https://www.w3schools.com/html/html_links.asp" target="_blank">How to make links</a></p>
-<p><a href="https://www.w3schools.com/tags/default.asp" target="_blank">HTML tag references</a></p>
-<p><a href="https://www.w3schools.com/tags/tag_img.asp" target="_blank">HTML images</a></p>
-<p><a href="https://developers.google.com/fonts/docs/getting_started" target="_blank">How to include Google Fonts in your document</a></p>
-
+  <source src="https://ia800306.us.archive.org/16/items/AllStar/SmashMouth-AllStar_64kb.mp3" type="audio/mpeg">
+  </audio>
 
 </div>
-
-</div>
-
-  </body>
-
+  </center>
+<img src="http://pngimg.com/uploads/shrek/shrek_PNG28.png" alt="My Hero" width="380" height="608" style="position:absolute; left:80px; top:250px;" >
+</body>
 </html>
