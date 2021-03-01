@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #38545F;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+
+h1 {
+font-family: 'URW Chancery L', cursive;
+font-style: normal;
+font-weight: normal;
+font-size: 4.8em;
+line-height: 1.2em;
+text-shadow: 2px 2px #789ead;
+margin-bottom: 0;
+word-break: normal;
+hyphens: auto;
+}
+
+
+h2 {
+font-family: 'URW Chancery L', cursive;
+text-decoration: underline;
+text-shadow: 2px 2px #2e4652;
+text-align: center;
+font-size: 32px;
+color: #fff;
+
+}
+
+h5 {
+font-family: 'Noto Serif JP', serif;
+font-style: normal;
+font-weight: normal;
+font-size: 28px;
+line-height: 25px;
+margin: .5em 0;
+}
+
+
+p {
+font-family: 'Noto Serif JP', serif;
+font-style: normal;
+font-weight: normal;
+font-size: 1.4em;
+line-height: 1.5em;
+
+}
+
+.video {
+  margin-bottom: 50px;
+
+}
+.white {
+color: #FFFFFF;
+}
+
+#linha {
+  word-spacing: 1.5em;
+  text-align: center;
+}
+
+
+.gridcontainer {
+  display: grid;
+  margin: 0 auto;
+  justify-content: center;
+  grid-template-rows: auto;
+
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+
+}
+
+.panel {
+  grid-column: span 8;
+  background-color:#96bec6;
+}
+
+.hero-image {
+  background-image: url("img/brigadeiro1.jpg");
+  grid-column: span 8;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.directions{
+  display:inline-block;
+}
+
+.hero-text {
+  padding:12% 8% 0;
+}
+
+
+.info-text {
+  margin-top:50px;
+}
+
+hr.horizontal {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid rgba(255, 255, 255, 0.8);
+    margin: 1em 0;
+    padding: 0;
+    width: 100%;
+}
+
+.ingredients {
+  margin: 0 50px 0 50px;
+  padding: 35px 200px 5px 200px;
+  text-align: center;
+}
+.ingredients-text {
+  font-size: 24px;
+  line-height: 32px;
+  display: inline-block;
+  text-align: left;
+  color: #DEE5ED;
+}
+
+.footer {
+margin:0;
+padding: 1px 0 1px 0;
+height:3rem;
+color:#fff;
+text-align: center;
+font-size: 10px;
+background-color:#142127;
+}
+
+@media (max-width:600px) {
+  .ingredients {
+    padding: 20px;
+    }
+}
+@media (max-width:1083px){
+  .ingredients {
+    padding: 20px 20px 20px 20px;
+    }
+  .hero-image{
+    height:40vh;
+  }
+  .panel {
+    min-height:100vh;
+
+  }
+}
+@media (min-width:1084px) {
+html {
+  font-size: 1vw;
+}
+.hero-image {
+    height: 100vh;
+}
+  }
