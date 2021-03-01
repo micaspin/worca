@@ -79,7 +79,7 @@ color: #FFFFFF;
 }
 
 .hero-image {
-  background-image: url("img/brigadeiro1.jpg");
+  background-image: url("brigadeiro1.jpg");
   grid-column: span 8;
   background-size: cover;
   background-position: center;
