@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Welcome to Worca!</title>
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/navbar.css">
+  <style>
+
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+
+    body {
+      align-items:center;
+      text-align: left;
+      font-size: 1em;
+      font-family: Maven Pro;
+      background-color: #f2f2f2;
+
+    }
+
+h2 {
+  text-align: center;
+}
+
+    #subject {
+      font-family: Maven Pro;
+
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  font-size: 20px;
+  background-color: rgba(235,140,156,1);
+  border-radius: 26px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: white;
+  padding: 12px 40px;
+  border: none;
+  cursor: pointer;
+  font-weight: Medium;
+  text-transform: uppercase;
+
+}
+
+input[type=submit]:hover {
+  background-color: rgba(166, 87, 99, 1);
+}
+
+/* Style the container/contact section */
+.container {
+  width: 500px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 50px;
+  margin: 2% 30%;
+
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  margin-top: 6px;
+  padding: 20px;
+}
+
+
+.row {
+  width: 500px;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .column, input[type=submit] {
+    width: 40%;
+    margin-top: 0;
+  }
+
+  .container, input[type=submit] {
+    margin: 10px;
+  }
+}
+</style>
+</head>
+<body>
+
+  <!-- navbar -->
+  <nav>
+    <div class="logo">
+      <img src="./images/logo.png" alt="worca logo" href="./index.html"/>
+    </div>
+    <ul class="menu">
+      <li class="menu-nav">
+        <a href="" id="language" class="btn"
+        ><img src="./images/lgg.png" alt="globo"
+        /></a>
+        <ul>
+          <li><a href="http:/about">English</a></li>
+          <li><a href="http:/contact">Portuguese</a></li>
+        </ul>
+      </li>
+      <li class="menu-nav btnLogin"><a class="btn">LOGIN</a></li>
+      <li class="menu-nav"><a href="#about">about</a></li>
+      <li class="menu-nav"><a href="./formulario.html">contact</a></li>
+      <li class="menu-nav"><a href="#">credits</a></li>
+    </ul>
+  </nav>
+  <!-- end of navbar -->
+  <div class="container">
+    <div class="column">
+      <div class="row">
+        <h2>Share your thoughts!</h2><br>
+        <form action="/action_page.php">
+          <label for="fname">Your Name</label>
+          <input type="text" placeholder="Your name...">
+          <label for="lname">Subject</label>
+          <input type="text" placeholder="Subject...">
+          <label for="country">Country of Residence</label>
+          <select id="country" name="country">
+            <option value="australia">Brazil</option>
+            <option value="canada">Canada</option>
+            <option value="usa">Mexico</option>
+            <option value="usa">South Korea</option>
+            <option value="usa">Japan</option>
+
+          </select>
+          <label for="subject">Message</label>
+          <textarea style="font-family: Maven Pro" style="height:170px" id="subject" name="subject" placeholder="Write your message here..."></textarea>
+          <div><br><center><input type="submit" value="Submit"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+  </head>
+
+</body>

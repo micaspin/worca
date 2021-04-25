@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Welcome to Worca!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css"/>
+    <link rel="stylesheet" type="text/css" href="css/modal.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  </head>
+  <body>
+
+    <!-- navbar -->
+    <nav>
+			<div class="logo">
+				<img src="./images/logo.png" alt="worca logo"/>
+			</div>
+			<ul class="menu">
+				<li class="menu-nav">
+					<a href="" id="language" class="btn"
+						><img src="./images/lgg.png" alt="globo"
+					/></a>
+					<ul>
+						<li><a href="./index.html">English</a></li>
+						<li><a href="./pt.html">Portuguese</a></li>
+					</ul>
+				</li>
+				<li class="menu-nav btnLogin"><a class="btn">LOGIN</a></li>
+				<li class="menu-nav"><a href="#about">about</a></li>
+				<li class="menu-nav"><a href="./formulario.html">contact</a></li>
+				<li class="menu-nav"><a href="https://micaelaspinasse.format.com/">credits</a></li>
+			</ul>
+		</nav>
+    <!-- end of navbar -->
+
+<!-- modal Start Now-->
+<div class="modal" id="modal">
+  <div class="modalcontent">
+    <div class="modalContainer">
+      <label for="modalExemple" class="closeModal">X</label>
+      <form>
+        <h2>Make an account now!</h2><br>
+        <label for="fname">E-mail</label>
+        <input
+        type="text"
+        id="fname"
+        name="firstname"
+        placeholder="Your e-mail"
+        <label for="fname">Username</label>
+        <input
+        type="text"
+        id="fname"
+        name="firstname"
+        placeholder="Choose a username"
+        />
+        <label for="lname">Password</label>
+        <input
+        type="text"
+        id="lname"
+        name="lastname"
+        placeholder="Type password here"
+        />
+        <br><br>
+        <center><input type="submit" value="SIGN UP" /></center>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- modal -->
+
+<!-- modal Login-->
+<div class="modal" id="modalLogin">
+  <div class="modalcontent">
+    <div class="modalContainer">
+      <label for="modalExemple" class="closeModalLogin">X</label>
+      <form>
+        <h2>Welcome back!</h2><br>
+        <label for="fname">E-mail or username</label>
+        <input
+        type="text"
+        id="fname"
+        name="firstname"
+        placeholder="Write your info here"
+        />
+        <label for="lname">Password</label>
+        <input
+        type="text"
+        id="lname"
+        name="lastname"
+        placeholder="Write your password here"
+        /><br><br>
+        <center><input type="submit" value="LOGIN" /></center>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- modal -->
+
+<!-- end of navbar -->
+<section class="background">
+  <div class="hero flex">
+    <div>
+      <div id="whale"></div>
+    </div>
+    <div class="start">
+        <span class="ready">Ready to begin?</span>
+        <button class="startbutton" href="/signuph.html" >START NOW</button>
+      </div>
+
+  </div>
+</section>
+<!-- divider -->
+<section>
+<div class="divider">
+<p class="journey">your language learning journey begins here!</p>
+</section>
+
+<!-- content - page 2 -->
+<div class="whale-container" id="about">
+  <div class="whale flex">
+    <div class=text>
+      <h2>Explore our materials</h2>
+      <p>Have access to tons of amazing online resources to aid you on your journey to knowledge and fluency!
+      </p>
+    </div>
+    <div>
+      <img src="./images/w1.PNG" alt="whale">
+    </div>
+  </div>
+  <div class="line"></div>
+  <div class="whale flex">
+    <div>
+      <img src="./images/w2.PNG" alt="whale">
+    </div>
+    <div class=text>
+      <h2>Time for fun</h2>
+      <p>Explore our app to watch videos, attend lectures, listen to fun podcasts and get in contact with other language learners!
+      </p>
+    </div>
+  </div>
+  <div class="line"></div>
+  <div class="whale flex">
+    <div class=text>
+      <h2>Show it off</h2>
+      <p>Test your skills with our official Worca exam to determine your level. After completing all lessons, you can get a certificate!
+      </p>
+    </div>
+    <div>
+      <img src="./images/w3.PNG" alt="whale">
+    </div>
+  </div>
+</div>
+<!-- footer -->
+
+      <div class="footer">
+        <div class="socialmedia">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-youtube"></i>
+          <i class="fa fa-instagram"></i>
+
+
+        </div>
+        <div id="logoblack"></div>
+        <div class="downloads">
+          <!-- <div id="dwld">Download:</div> -->
+          <i class="fa fa-android"></i>
+          <i class="fa fa-apple"></i>
+        </div>
+    </div>
+
+  <script>
+const modal = document.querySelector("#modal")
+const modalLogin = document.querySelector("#modalLogin")
+const checkbox = document.querySelector(".modalCheckbox")
+const startbutton = document.querySelector(".startbutton")
+const closeModal = document.querySelector(".closeModal")
+const closeModalLogin = document.querySelector(".closeModalLogin")
+const btnLogin = document.querySelector(".btnLogin")
+
+startbutton.addEventListener("click", ()=> {
+  modal.classList.remove("modal")
+  modal.classList.add("showModal")
+})
+
+btnLogin.addEventListener("click", ()=> {
+  modalLogin.classList.remove("modal")
+  modalLogin.classList.add("showModal")
+
+})
+
+closeModal.addEventListener("click", ()=> {
+  modal.classList.add("modal")
+  modal.classList.remove("showModal")
+})
+closeModalLogin.addEventListener("click", ()=> {
+  modalLogin.classList.add("modal")
+  modalLogin.classList.remove("showModal")
+})
+</script>
+  </body>
+</html>
