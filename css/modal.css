@@ -1,0 +1,146 @@
+.container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+h1 {
+	display: inline-block;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: white;
+	color: black;
+}
+
+.modal {
+	display: none;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.showModal {
+	display: flex;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 90%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+#modalExemple:checked + .modal {
+	display: flex;
+}
+
+.modalCheckbox {
+	display: none;
+}
+
+.openModal {
+	cursor: pointer;
+}
+.openModal:hover {
+	transform: scale(1.1);
+}
+
+.openModal p {
+	padding-top: 5px;
+}
+
+.modalContainer {
+	position: relative;
+}
+
+.closeModal {
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	font-size: 20px;
+	color: black;
+}
+.closeModalLogin {
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	font-size: 30px;
+	color: black;
+}
+.modal .closeModal:hover {
+	cursor: pointer;
+	color: rgb(158, 229, 247);
+	transform: scale(1.5);
+}
+
+.modalcontent {
+	background-color: #e9eff2;
+	font-size:16px;
+	color: #111;
+	width: 30%;
+	border: 1px solid lightgray;
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 3px 3px 5px black;
+	overflow: auto;
+}
+
+@media (max-width: 480px) {
+	.modalcontent {
+		width: 90%;
+		height: 90%;
+	}
+}
+@media (max-width: 980px) {
+	.modalcontent {
+		width: 50%;
+		height: 50%;
+	}
+}
+
+/* CSS Modal form  */
+/* Style inputs with type="text", select elements and textareas */
+input[type="text"],
+select,
+textarea {
+	width: 100%; /* Full width */
+	text-align: left;
+	font-family: Maven Pro;
+	font-size: 14px;
+	padding: 12px; /* Some padding */
+	border: 1px solid #ccc; /* Gray border */
+	border-radius: 4px; /* Rounded borders */
+	box-sizing: border-box; /* Make sure that padding and width stays in place */
+	margin-top: 6px; /* Add a top margin */
+	margin-bottom: 16px; /* Bottom margin */
+	resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
+	background-color: #de919d;
+	font-weight: medium;
+	font-size: 20px;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 30px;
+	cursor: pointer;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type="submit"]:hover {
+	background-color: #9c5b64;
+}
+
+/* Add a background color and some padding around the form */
+.modalContainer {
+	border-radius: 5px;
+	background-color: #e9eff2;
+	padding: 20px;
+}
